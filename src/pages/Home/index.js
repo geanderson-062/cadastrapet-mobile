@@ -25,6 +25,7 @@ export default function Home() {
     <View style={styles.main}>
     <Title_home/>
      <Text style={styles.Bemvindo} >Bem vindo: {user.email}</Text>
+     <Text style={styles.Status} >Status: {user.status}</Text>
 
      <Button
      

@@ -34,7 +34,7 @@ function AuthProvider({children}){
 
     //dados enviados
     return(
-        <AuthContext.Provider value={{ nome: "Adm", signIn, user }}>
+        <AuthContext.Provider value={{  signIn, user }}>
             {children}
         </AuthContext.Provider>
     )

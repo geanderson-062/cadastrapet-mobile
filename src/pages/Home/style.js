@@ -22,6 +22,17 @@ const styles = StyleSheet.create({
 
     },
 
+    Status:{
+
+      //cor do titulo e tamanho e tipo da fonte
+      color:'#00a000',//cor do titulo
+      fontSize:20,//tamanho da letra
+      fontWeight:'bold',//negrito
+      textAlign: 'center',
+      marginTop: 10,
+
+    },
+
     main:{
 
       marginTop: 20,

@@ -1,25 +1,20 @@
-import React, {useContext} from 'react';
-import { View, Text } from 'react-native';
-
-//importando o context
-import { AuthContext } from '../../contexts/auth'
+import React from 'react';
+import { View } from 'react-native';
 
 //importando style
 import styles from './style'
 
+//importando a lista
+import Lista from '../../components/Lista/index'
+
 //pegando dados do auth
 export default function Pedidos(){
 
-  //trazendo propiedade nome e user
-  const {nome, user} = useContext(AuthContext)
-
  return (
    <View style={styles.container}>
-     <Text>Pagina Pedidos</Text>
+  
+       <Lista/>
 
-     <Text>Nome: {nome}</Text>
-     <Text>Email: {user.email}</Text>
-     <Text>Status: {user.status}</Text>
    </View>
   );
 }
