@@ -10,7 +10,7 @@ import styles from './style'
 import { AuthContext } from '../../contexts/auth'
 
 //importando os componentes
-
+import Title_home from '../../components/Title_home/index'
 
 export default function Home() {
   const navigation = useNavigation();
@@ -19,15 +19,22 @@ export default function Home() {
   const {user} = useContext(AuthContext)
 
   return (
-   <View style={styles.container}>
-     
-     <Text>Bem vindo: {user.email}</Text>
 
-     <Button 
+  <View style={styles.container}>
+    
+    <View style={styles.main}>
+    <Title_home/>
+     <Text style={styles.Bemvindo} >Bem vindo: {user.email}</Text>
+
+     <Button
+     
      title="Acessar pedidos"
      onPress={() => navigation.navigate("Pedidos")}
      />
+    </View>
+
    </View>
+
   );
 }
 
