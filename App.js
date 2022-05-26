@@ -1,5 +1,5 @@
 import { NavigationContainer } from '@react-navigation/native';
-import Routes from './src/routes';
+import Routes from './src/router/routes';
 
 import AuthProvider from './src/contexts/auth';
 
