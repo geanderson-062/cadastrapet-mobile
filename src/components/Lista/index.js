@@ -1,45 +1,42 @@
-import React from 'react';
-import { SafeAreaView, View, FlatList, Text } from 'react-native';
-import styles from './style'; //exportando css style 
+import * as React from 'react';
+import { Text, View, Button, StyleSheet, ScrollText } from 'react-native';
+import useAxios from 'axios-hooks';
 
-const DATA = [
-    
-  {
-    id: '1',
-    title: 'First Item',
-  },
-  {
-    id: '2',
-    title: 'Second Item',
-  },
-  {
-    id: '3',
-    title: 'Third Item',
-  },
+import { Card } from 'react-native-paper';
 
+export default function App() {
+   const [{ data, loading, error }, refetch] = useAxios(
+    'https://reqres.in/api/users?delay=1',
+    {
+      manual: true,
+    }
+  )
+
+  if (loading) return <Text>Loading...</Text>
+  if (error) return <ScrollText>{JSON.stringify(error, null, 2)}</ScrollText>
+
+    return (
+      <View style={styles.container}>
+        <Button onPress={()=> refetch({
+          data: {
+            delay: 2
+          }
+        })} title="Refetch" />
+        <Text style={styles.paragraph}>{JSON.stringify(data, null, 2)}</Text>
+      </View>
+    );
   
-];
-
-const Item = ({ title }) => (
-  <View style={styles.item}>
-    <Text style={styles.title}>{title}</Text>
-  </View>
-);
-
-const App = () => {
-  const renderItem = ({ item }) => (
-    <Item title={item.title} />
-  );
-
-  return (
-    <SafeAreaView style={styles.container}>
-      <FlatList
-        data={DATA}
-        renderItem={renderItem}
-        keyExtractor={item => item.id}
-      />
-    </SafeAreaView>
-  );
 }
 
-export default App;
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    backgroundColor: '#ecf0f1',
+    padding: 8,
+  },
+  paragraph: {
+    marginTop: 8,
+    fontFamily: 'Monospace'
+  },
+});
