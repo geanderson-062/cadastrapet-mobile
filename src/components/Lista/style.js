@@ -3,9 +3,7 @@ import { StyleSheet } from 'react-native'
 // css style 
 const styles = StyleSheet.create( {
 
-    container: {
-        flex: 1,    
-      },
+
       item: {
         backgroundColor: '#00a000',
         padding: 20,
@@ -18,6 +16,18 @@ const styles = StyleSheet.create( {
         fontSize: 20,
         color:'#fff',  
       },
+  
+      container: {
+        flex: 1,
+        justifyContent: 'center',
+        //backgroundColor: '#ecf0f1',
+        padding: 8,
+      },
+      paragraph: {
+        marginTop: 8,
+        //fontFamily: 'Monospace'
+      },
+
     });
 
   export default styles

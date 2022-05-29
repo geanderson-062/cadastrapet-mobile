@@ -1,6 +1,6 @@
 import React from 'react';
 import { SafeAreaView, View, FlatList, Text } from 'react-native';
-import styles from './style'; //exportando css style 
+import styles from '../style'; //exportando css style 
 
 const DATA = [
     
