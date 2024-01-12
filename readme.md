@@ -24,15 +24,15 @@ Este projeto foi desenvolvido para compor a nota na disciplina de Prática Profi
 - **Geanderson Ferreira**: Designer, Front-end, Back-end e Banco de Dados.
 - **Viviane Raquel**: Designer, Front-end, Back-end e Banco de Dados.
 
-  ---
-  
-### Sistema Web
-Uma interface administrativa para gerenciar cadastros, serviços e produtos do petshop.
-
 ---
 
 ### Sistema Web
-Focado na experiência do usuário, proporcionando facilidade de acesso e interação com o petshop. [Versão web do Projeto]([https://github.com/geanderson-062/cadastrapet-mobile](https://github.com/geanderson-062/Cadastrapet))
+Uma interface administrativa para gerenciar cadastros, serviços e produtos do petshop. [Versão web do Projeto](https://github.com/geanderson-062/Cadastrapet)
+
+---
+
+### Sistema Mobile
+Focado na experiência do usuário, proporcionando facilidade de acesso e interação com o petshop. 
 
 ---
 
