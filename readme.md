@@ -1,53 +1,78 @@
+# Sistema de Gerenciamento de Petshop
 
-# CadastraPet Mobile
+## Descrição
+Este projeto é um sistema de gerenciamento de petshop, que inclui um sistema web e um sistema mobile. Foi desenvolvido como parte da conclusão da matéria de Desenvolvimento Mobile, ministrada pelo Professor Rafael Soares, no Centro Universitário UNINASSAU Caruaru.
 
-## Sobre o Projeto
-CadastraPet Mobile é um aplicativo destinado à facilitação do cadastro e gerenciamento de pets. Este aplicativo permite aos usuários registrar informações detalhadas sobre seus animais de estimação, incluindo saúde, vacinações, características físicas e muito mais.
+---
 
-## Funcionalidades
-- **Cadastro de Pets:** Permite aos usuários adicionar e gerenciar informações sobre seus pets.
-- **Lembretes de Vacinação:** Notifica os usuários sobre as datas de vacinação de seus pets.
-- **Galeria de Fotos:** Os usuários podem armazenar e visualizar fotos de seus pets.
-- **Informações de Saúde:** Mantém um registro das condições de saúde e visitas ao veterinário.
+## Contexto Acadêmico
 
-## Tecnologias Utilizadas
-- React Native
+Este projeto foi desenvolvido para compor a nota na disciplina de Prática Profissional do quinto período do curso de Análise e Desenvolvimento de Sistemas. O objetivo é aplicar os conhecimentos teóricos adquiridos durante o curso em um projeto prático e funcional.
 
-## Como Instalar e Rodar o Projeto
-Para instalar e executar o CadastraPet Mobile em seu ambiente local, siga estas etapas:
+---
 
-1. Clone o repositório:
-   ```
-   git clone https://github.com/seu-usuario/cadastrapet-mobile.git
-   ```
-2. Entre na pasta do projeto:
-   ```
-   cd cadastrapet-mobile
-   ```
-3. Instale as dependências:
-   ```
-   npm install
-   ```
-4. Execute o projeto:
-   ```
-   npm start
-   ```
+## Agradecimentos
 
-## Contribuições
-Contribuições são o que fazem a comunidade open source um lugar incrível para aprender, inspirar e criar. Qualquer contribuição que você fizer será **muito apreciada**.
+- Professor Rafael Soares - *Por fornecer orientação e suporte ao longo do projeto*
+- Colegas de Classe - *Por feedback e sugestões*
+- UNINASSAU Caruaru - *Por fornecer a oportunidade e os recursos para desenvolver este projeto*
 
-1. Faça um Fork do projeto
-2. Crie uma Branch para sua Feature (`git checkout -b feature/AmazingFeature`)
-3. Adicione suas mudanças (`git add .`)
-4. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-5. Push para a Branch (`git push origin feature/AmazingFeature`)
-6. Abra um Pull Request
+---
 
-## Licença
-Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
+## Desenvolvedores
 
-## Contato
-Seu Nome - [@seuTwitter](https://twitter.com/seuTwitter)
+- **Geanderson Ferreira**: Designer, Front-end, Back-end e Banco de Dados.
+- **Viviane Raquel**: Designer, Front-end, Back-end e Banco de Dados.
 
-Link do Projeto: [https://github.com/seu-usuario/cadastrapet-mobile](https://github.com/seu-usuario/cadastrapet-mobile)
-```
+  ---
+  
+### Sistema Web
+Uma interface administrativa para gerenciar cadastros, serviços e produtos do petshop.
+
+---
+
+### Sistema Web
+Focado na experiência do usuário, proporcionando facilidade de acesso e interação com o petshop. [Versão web do Projeto]([https://github.com/geanderson-062/cadastrapet-mobile](https://github.com/geanderson-062/Cadastrapet))
+
+---
+
+## Avaliação de Desenvolvimento Mobile
+O aplicativo mobile foi desenvolvido com foco em:
+
+1. **Componentização:** Utilização de código modular.
+2. **Organização e Estrutura:** Estruturação clara e organizada.
+3. **Login e Senha:** Sistema seguro de autenticação.
+4. **Home com Menus:** Interface intuitiva.
+5. **Opções de Menu:** 
+   - **5.1 Cadastro**
+   - **5.2 Edição de Cadastro**
+   - **5.3 Listagem de Cadastro**
+   - **5.4 Exclusão de Cadastro**
+  
+---
+
+## Backend
+Desenvolvido em React Native, utiliza uma API que retorna dados em formato JSON, interagindo com um banco de dados para operações de CRUD.
+
+---
+
+### Banco de Dados
+Armazenamento de informações de cadastro e outras operações essenciais.
+
+---
+
+### Consumo da API
+Frontend consome a API utilizando comandos `fetch`.
+
+---
+
+## Design e Cores
+Segue uma paleta de cores definida:
+
+- **Cor Primária:** `#00a000`
+- **Cor de Fundo:** `#005100`
+
+---
+
+Este projeto foi desenvolvido para a conclusão da matéria de Desenvolvimento Mobile, orientado pelo Professor Rafael Soares, no Centro Universitário UNINASSAU Caruaru. Este README oferece uma visão geral do sistema de gerenciamento de petshop. Para detalhes adicionais, consulte a documentação específica.
+
